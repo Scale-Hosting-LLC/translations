@@ -1,0 +1,18 @@
+name: Remote SSH Command
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute remote SSH commands using password
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ubuntu
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            sudo -i
+            cd /var/www/mythicaldash-v3/frontend/src/locale/
+            git clone https://github.com/Scale-Hosting-LLC/translations.git
