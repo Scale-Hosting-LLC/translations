@@ -7,3 +7,4 @@ In this repository, you can submit changes to our website localization or add ne
 2. Copy en/yml and paste it into your new file
 3. Modify all the sentences and words to the language you have chosen
 4. Submit Pull Requests
+.
