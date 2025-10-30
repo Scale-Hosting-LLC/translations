@@ -21,8 +21,8 @@ Components:
             Loading: 'Loading...'
             Copy:
                 Title: 'Copied'
-                Success: 'Copied to clipboard just like a boss.'
-                Footer: 'Yay it worked ;)'
+                Success: 'Copied to clipboard.'
+                Footer: 'It worked'
             Error: 'An error occurred. Please try again later.'
     QuickLinks:
         title: 'Quick Links'
@@ -57,7 +57,7 @@ Components:
             title: 'Server Allocation(s)'
     ServerList:
         title: 'My Servers'
-        description: 'Manage your gaming infrastructure'
+        description: 'Manage your servers'
         createServer: 'Create Your First Server'
         createServerButton: 'Create Server'
         noServers: 'No Servers Found'
@@ -154,7 +154,7 @@ dashboard:
         account_linking:
             title: Account Linking Required
             # Generic fallback message (legacy - prefer specific variants below)
-            message: You need to link your Discord or GitHub account to access all features. You will be redirected to your account settings to complete this step.
+            message: You need to link your Discord account to access all features. You will be redirected to your account settings to complete this step.
             # Use when exactly ONE account type needs linking (Discord OR GitHub)
             message_single: You need to link your {type} account to access all features. You will be redirected to your account settings to complete this step.
             # Use when exactly TWO account types need linking (Discord AND GitHub)
@@ -180,6 +180,7 @@ auth:
             footer: Please contact support for assistance
             title: Session Error
             expired: Your session has expired
+# Not Needed As We Dont Support SSO
     pages:
         sso:
             page:
@@ -214,7 +215,7 @@ auth:
                     footer: Please contact support for assistance
                     not_verified: Your email is not verified yet
                     banned: Your account was permanently banned
-                    deleted: Your account was deleted either by you or an admin
+                    deleted: Your account has been deleted. Please contact support
                     pterodactyl_user_not_found: Pterodactyl user not found.
                     pterodactyl_error: Failed to register user in Pterodactyl panel
                     pterodactyl_not_enabled: Pterodactyl is not enabled
@@ -250,7 +251,7 @@ auth:
                     account_linking:
                         title: Account Linking Required
                         # Generic fallback message (legacy - prefer specific variants below)
-                        message: This host requires you to link your Discord or GitHub account after registration. You will need to complete this step to access all features.
+                        message: This host requires you to link your Discord account after registration. You will need to complete this step to access all features.
                         # Use when exactly ONE account type needs linking (Discord OR GitHub)
                         message_single: This host requires you to link your {type} account after registration. You will need to complete this step to access all features.
                         # Use when exactly TWO account types need linking (Discord AND GitHub)
@@ -271,6 +272,7 @@ auth:
                     discord_required: Discord account linking is required for registration
                     github_required: GitHub account linking is required for registration
                     discord_not_enabled: Discord integration is not enabled
+                    # again not needed as we dont plan to use github in the future (at the moment)
                     github_not_enabled: GitHub integration is not enabled
                     discord_token_failed: Failed to authenticate with Discord
                     github_token_failed: Failed to authenticate with GitHub
@@ -507,6 +509,7 @@ account:
                 security: 'Security'
                 emails: 'Emails'
                 activity: 'Activity'
+                # API is Usable unlike other hosts
                 apikey: 'API Key'
                 linked_accounts: 'Linked Accounts'
                 image_hosting: 'Image Hosting'
@@ -592,8 +595,10 @@ account:
                     button: 'Deactivate Account'
                     warning:
                         title: 'Warning'
+                        ## Please use this to also suggest changes as its a little harsh
                         description: "Don't be an idiot, you can't undo this action, like really once you press this button, there is no more confirmation it will straight up delete your account. So be sure you want to do this."
                     confirm:
+                    ## replace with a good second warning
                         title: 'Are you sure? (Step {step}/3)'
                         text: 'This action is irreversible. Are you absolutely sure you want to delete your account? (Step {step}/3)'
                         confirm: 'Yes, continue'
@@ -608,6 +613,7 @@ account:
                     title: Application Data
                     subTitle: Manage and clear application data incase you see outdated data.
                     cache:
+                    # This is browser cache
                         title: Cache Usage
                         total: 'Total cached data: {totalSize}'
                         button: 'Clear Cache & Reload'
