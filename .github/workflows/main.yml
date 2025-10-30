@@ -13,6 +13,9 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            sudo -i
             cd /var/www/mythicaldash-v3/frontend/src/locale/
-            git clone https://github.com/Scale-Hosting-LLC/translations.git
+            sudo git clone https://github.com/Scale-Hosting-LLC/translations.git
+            cd translations
+            sudo cp * ../
+            sudo rm -r translations
+            
