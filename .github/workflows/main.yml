@@ -17,4 +17,7 @@ jobs:
             sudo git clone https://github.com/Scale-Hosting-LLC/translations.git
             cd translations
             sudo cp * ../
+            sudo systemctl restart nginx
+            sudo rm -rf /var/cache/nginx/*
+            sudo nginx -s reload
             
