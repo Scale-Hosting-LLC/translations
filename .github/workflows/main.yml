@@ -14,6 +14,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /var/www/mythicaldash-v3/frontend/src/locale/
+            sudo rm -r translations
             sudo git clone https://github.com/Scale-Hosting-LLC/translations.git
             cd translations
             sudo cp * ../
