@@ -19,6 +19,6 @@ jobs:
                   source-directory: "lang"
                   destination-github-username: "Scale-Hosting-LLC"
                   destination-repository-name: "Client-Panel"
-                  target-branch: main
+                  target-branch: Stable
                   commit-message: ORIGIN_COMMIT
                   target-directory: "frontend/src/locale"
