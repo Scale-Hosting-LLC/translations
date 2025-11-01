@@ -16,6 +16,7 @@ jobs:
               env:
                   SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
               with:
+                  content: "lang"
                   destination-github-username: "Scale-Hosting-LLC"
                   destination-repository-name: "Client-Panel"
                   target-branch: main
