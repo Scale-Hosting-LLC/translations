@@ -473,6 +473,7 @@ errors:
         message: >-
             Tunggu dulu, Kamu tidak memiliki izin yang diperlukan
             untuk mengakses area ini.
+    notfound:
         title: 404 Tidak Ditemukan
         message: >-
             Kami tidak dapat menemukan halaman yang Kamu cari. Halaman tersebut mungkin telah dipindahkan atau
