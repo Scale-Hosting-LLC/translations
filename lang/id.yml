@@ -456,7 +456,7 @@ auth:
                         placeholder: Konfirmasikan kata sandi baru Kamu
                     reset_button:
                         label: Atur Ulang Kata Sandi
-                        loading: Applying changes...
+                        loading: Menerapkan Perubahan...
                     login:
                         label: Ingat kata sandi Kamu?
                         link: Login
@@ -578,7 +578,7 @@ account:
                     update_button:
                         label: Simpan Perubahan
                         reset: Mengatur ulang
-                        loading: Penghematan...
+                        loading: Menyimpan...
                     browserStorage:
                         title: Penyimpanan Peramban
                         subTitle: Kelola penyimpanan browser lokal dan data cache
@@ -610,7 +610,7 @@ account:
                         text: 'Ada masalah saat menghapus akun Kamu. Silakan coba lagi.'
                 clear:
                     title: Data Aplikasi
-                    subTitle: Kelola dan hapus data aplikasi jika Kamu melihat data usang.
+                    subTitle: Kelola dan hapus data aplikasi jika Kamu melihat data kadaluwarsa.
                     cache:
                     # This is browser cache
                         title: Penggunaan Cache
@@ -667,7 +667,7 @@ account:
                     twofactor:
                         title: Otentikasi Dua Faktor (2FA)
                         active: Aktif
-                        disabled: Dengan disabilitas
+                        disabled: Dinonaktifkan
                         description:
                             enabled: 'Akun Kamu memiliki lapisan keamanan tambahan.'
                             disabled: 'Aktifkan 2FA untuk keamanan tambahan.'
@@ -676,7 +676,7 @@ account:
                             enable: Aktifkan 2FA
                         lastEnabled: 'Terakhir Diaktifkan:'
                         disableButton:
-                            label: Cacat
+                            label: Nonaktifkan
                             loading: Menonaktifkan...
                     activeSessions:
                         title: Sesi Aktif
@@ -696,7 +696,7 @@ account:
                     description: Tingkatkan keamanan akun Kamu dengan rekomendasi ini
                     monitor:
                         title: Pantau Aktivitas Masuk
-                        description: Periksa aktivitas login terkini Kamu secara teratur dan laporkan setiap upaya mencurigakan.
+                        description: Periksa aktivitas login terkini Kamu secara teratur dan laporkan setiap hal yang mencurigakan.
                     password:
                         title: Gunakan Kata Sandi yang Kuat
                         description: Buat kata sandi unik yang panjangnya minimal 12 karakter dengan campuran huruf, angka, dan simbol.
@@ -705,25 +705,25 @@ account:
                             title: Aktifkan Otentikasi Dua Faktor
                             description: Tambahkan lapisan keamanan ekstra ke akun Kamu dengan meminta kode verifikasi selain kata sandi Kamu.
                             button:
-                                label: Memungkinkan
+                                label: Aktifkan
                                 loading: Mengaktifkan...
                         disabled:
-                            title: Nonaktifkan Otentikasi Dua Faktor
+                            title: Nonaktifkan Dua Faktor
                             description: Nonaktifkan 2FA untuk membuat akun Kamu berada dalam kondisi kurang aman.
                             button:
-                                label: Cacat
-                                loading: Menonaktifkan...
+                                label: Nonaktifkan                           l
+                                Memungkinkanading: Menonaktifkan...
                 cards:
                     twofactor:
                         title: Otentikasi Dua Faktor (2FA)
                         subTitle: Kamu ingin memastikan akun Kamu tidak dicuri?
                         enable_button:
                             description: '2FA saat ini dinonaktifkan. Aktifkan untuk mengamankan akun Kamu.'
-                            label: Memungkinkan
+                            label: Aktifkan
                             loading: Mengaktifkan...
                         disable_button:
                             description: '2FA saat ini diaktifkan. Nonaktifkan untuk membuat akun Kamu berada dalam kondisi kurang aman.'
-                            label: Cacat
+                            label: Nonaktifkan
                             loading: Menonaktifkan...
                     password:
                         title: Ubah kata sandi Kamu
@@ -959,8 +959,8 @@ components:
     notifications:
         title: 'Pemberitahuan'
         credits: 'Kamu memiliki sisa kredit sebesar {credits}'
-        mark_all_read: 'TKamui semua sebagai telah dibaca'
-        mark_read: 'TKamui sebagai telah dibaca'
+        mark_all_read: 'Tandai semua sebagai telah dibaca'
+        mark_read: 'Tandai sebagai telah dibaca'
         no_notifications: 'Tidak ada notifikasi yang ditemukan'
         view_all: 'Lihat semua'
     errors:
