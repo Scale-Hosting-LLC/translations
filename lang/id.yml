@@ -583,7 +583,7 @@ account:
                         title: Penyimpanan Peramban
                         subTitle: Kelola penyimpanan browser lokal dan data cache
                         currentStorageUsage: 'Penggunaan Penyimpanan Saat Ini'
-                        clearAllBrowserData: 'Hapus Semua Data Peramban'
+                        clearAllBrowserData: 'Hapus Semua Data Browser'
                         totalBrowserStorage: 'Total penyimpanan browser yang digunakan oleh aplikasi ini'
                         browserStorageDescription: 'Penyimpanan browser mencakup cookie, penyimpanan lokal, dan data sesi serta salinan offline aplikasi.'
                         clearAllBrowserDataButton: Hapus Semua Data Peramban
@@ -712,7 +712,7 @@ account:
                             description: Nonaktifkan 2FA untuk membuat akun Kamu berada dalam kondisi kurang aman.
                             button:
                                 label: Nonaktifkan                           l
-                                Memungkinkanading: Menonaktifkan...
+                                loading: Menonaktifkan...
                 cards:
                     twofactor:
                         title: Otentikasi Dua Faktor (2FA)
